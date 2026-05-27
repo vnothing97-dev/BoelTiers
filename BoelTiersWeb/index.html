@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoelTiers | Ranking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <nav class="navbar">
+        <div class="logo">BOELTIERS</div>
+        <div class="nav-links">
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#"><i class="fa-solid fa-trophy"></i> Rankings</a>
+            <a href="#"><i class="fa-brands fa-discord"></i> Discords <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#"><i class="fa-solid fa-code"></i> API Docs</a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search player...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+
+    <!-- Pestañas de Categorías -->
+    <div class="tabs-container">
+        <button class="tab active">
+            <i class="fa-solid fa-trophy"></i> Overall
+        </button>
+        <button class="tab">
+            <i class="fa-solid fa-heart"></i> UHC
+        </button>
+        <button class="tab">
+            <i class="fa-solid fa-khanda"></i> Sword
+        </button>
+        <button class="tab">
+            <i class="fa-solid fa-flask"></i> Nethpot
+        </button>
+    </div>
+
+    <!-- Barra Info Servidor -->
+    <div class="server-bar">
+        <button class="info-btn">
+            <i class="fa-solid fa-circle-info"></i> Information
+        </button>
+        <div class="server-id">
+            <span>PVP CLUB</span>
+            <code>mcplvp.club</code>
+            <i class="fa-solid fa-copy"></i>
+            <i class="fa-brands fa-discord"></i>
+        </div>
+    </div>
+
+    <!-- Tabla Principal Ranking -->
+    <div class="ranking-container">
+        <table class="ranking-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>PLAYER</th>
+                    <th>REGION</th>
+                    <th>UHC</th>
+                    <th>SWORD</th>
+                    <th>NETHPOT</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- 1. Artij -->
+                <tr class="row rank-1">
+                    <td class="pos">1.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/Artij/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">Artij</div>
+                            <div class="rank-badge">⚔️ Combat Master <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region na">NA</span></td>
+                    <td><span class="tier ht3">HT3</span></td>
+                    <td><span class="tier ht2">HT2</span></td>
+                    <td><span class="tier lt2">LT2</span></td>
+                </tr>
+
+                <!-- 2. Valryaaa -->
+                <tr class="row rank-2">
+                    <td class="pos">2.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/Valryaaa/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">Valryaaa</div>
+                            <div class="rank-badge">⚔️ Combat Master <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region eu">EU</span></td>
+                    <td><span class="tier lt1">LT1</span></td>
+                    <td><span class="tier ht1">HT1</span></td>
+                    <td><span class="tier lt1">LT1</span></td>
+                </tr>
+
+                <!-- 3. EffectNova -->
+                <tr class="row rank-3">
+                    <td class="pos">3.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/EffectNova/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">EffectNova</div>
+                            <div class="rank-badge">⚔️ Combat Master <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region na">NA</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier ht1">HT1</span></td>
+                    <td><span class="tier ht1">HT1</span></td>
+                </tr>
+
+                <!-- 4. nFyq_ -->
+                <tr class="row">
+                    <td class="pos">4.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/nFyq_/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">nFyq_</div>
+                            <div class="rank-badge">⚔️ Combat Master <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region eu">EU</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier lt1">LT1</span></td>
+                    <td><span class="tier ht1">HT1</span></td>
+                </tr>
+
+                <!-- 5. OutFresh -->
+                <tr class="row">
+                    <td class="pos">5.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/OutFresh/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">OutFresh</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region eu">EU</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier ht2">HT2</span></td>
+                    <td><span class="tier ht2">HT2</span></td>
+                </tr>
+
+                <!-- 6. mojanenas67 -->
+                <tr class="row">
+                    <td class="pos">6.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/mojanenas67/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">mojanenas67</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region na">NA</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier lt2">LT2</span></td>
+                    <td><span class="tier lt2">LT2</span></td>
+                </tr>
+
+                <!-- 7. ElDelki -->
+                <tr class="row">
+                    <td class="pos">7.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/ElDelki/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">ElDelki</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region eu">EU</span></td>
+                    <td><span class="tier ht3">HT3</span></td>
+                    <td><span class="tier lt2">LT2</span></td>
+                    <td><span class tier ht3">HT3</span></td>
+                </tr>
+
+                <!-- 8. Vamsillo -->
+                <tr class="row">
+                    <td class="pos">8.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/Vamsillo/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">Vamsillo</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region eu">EU</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier ht3">HT3</span></td>
+                    <td><span class="tier ht3">HT3</span></td>
+                </tr>
+
+                <!-- 9. Jjuanma_ -->
+                <tr class="row">
+                    <td class="pos">9.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/Jjuanma_/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">Jjuanma_</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region na">NA</span></td>
+                    <td><span class="tier lt4">LT4</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                </tr>
+
+                <!-- 10. Cerlitt -->
+                <tr class="row">
+                    <td class="pos">10.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/Cerlitt/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">Cerlitt</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region eu">EU</span></td>
+                    <td><span class="tier ht4">HT4</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier lt4">LT4</span></td>
+                </tr>
+
+                <!-- 11. Zanekichi -->
+                <tr class="row">
+                    <td class="pos">11.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/Zanekichi/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">Zanekichi</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region na">NA</span></td>
+                    <td><span class="tier lt4">LT4</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                </tr>
+
+                <!-- 12. wKorai -->
+                <tr class="row">
+                    <td class="pos">12.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/wKorai/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">wKorai</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region eu">EU</span></td>
+                    <td><span class="tier lt4">LT4</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                </tr>
+
+                <!-- 13. xekaitzDM -->
+                <tr class="row">
+                    <td class="pos">13.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/xekaitzDM/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">xekaitzDM</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region na">NA</span></td>
+                    <td><span class="tier lt4">LT4</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier lt4">LT4</span></td>
+                </tr>
+
+                <!-- 14. Ivan2bleA -->
+                <tr class="row">
+                    <td class="pos">14.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/Ivan2bleA/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">Ivan2bleA</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region eu">EU</span></td>
+                    <td><span class="tier lt4">LT4</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier lt4">LT4</span></td>
+                </tr>
+
+                <!-- 15. Feerr_ -->
+                <tr class="row">
+                    <td class="pos">15.</td>
+                    <td class="player-col">
+                        <img src="https://mc-heads.net/avatar/Feerr_/40" alt="Skin">
+                        <div class="player-info">
+                            <div class="name">Feerr_</div>
+                            <div class="rank-badge">🔱 Combat Ace <span>(Puntos)</span></div>
+                        </div>
+                    </td>
+                    <td><span class="region na">NA</span></td>
+                    <td><span class="tier lt3">LT3</span></td>
+                    <td><span class="tier unranked">UNRANKED</span></td>
+                    <td><span class="tier unranked">UNRANKED</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
