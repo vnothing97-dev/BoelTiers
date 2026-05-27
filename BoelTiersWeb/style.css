@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f131a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+.navbar {
+    background: rgba(15, 19, 26, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #1e2530;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8b400;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f8b400;
+}
+
+/* Sección Principal */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(15, 19, 26, 0.8), rgba(15, 19, 26, 0.9)), 
+                url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px rgba(248, 180, 0, 0.4);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #aaa;
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #f8b400, #ff9500);
+    color: #000;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(248, 180, 0, 0.3);
+}
+
+/* Títulos de sección */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 4rem 0 3rem;
+    color: #fff;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #f8b400;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Tarjetas de Rangos */
+.tiers-section {
+    padding: 2rem 5% 5rem;
+}
+
+.tiers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tier-card {
+    background-color: #1a202c;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.tier-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.tier-card.featured {
+    border-color: #f8b400;
+    transform: scale(1.05);
+}
+
+.tier-card.featured:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.tier-header {
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.tier-header.basic {
+    background: linear-gradient(135deg, #4a5568, #2d3748);
+}
+
+.tier-header.vip {
+    background: linear-gradient(135deg, #f6e05e, #d69e2e);
+    color: #000;
+}
+
+.tier-header.elite {
+    background: linear-gradient(135deg, #9f7aea, #6b46c1);
+}
+
+.tier-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.popular {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: #ff3333;
+    color: white;
+    padding: 0.3rem 2rem;
+    font-size: 0.8rem;
+    transform: rotate(45deg);
+    font-weight: bold;
+}
+
+.tier-features {
+    padding: 2rem;
+    list-style: none;
+}
+
+.tier-features li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #2d3748;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.tier-features li i.fa-check {
+    color: #48bb78;
+}
+
+.tier-features li i.fa-xmark {
+    color: #e53e3e;
+}
+
+.btn-tier {
+    display: block;
+    text-align: center;
+    background-color: #2d3748;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 2rem 2rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+.btn-tier:hover {
+    background-color: #4a5568;
+}
+
+.featured-btn {
+    background: linear-gradient(45deg, #f8b400, #ff9500);
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.featured-btn:hover {
+    background: linear-gradient(45deg, #ff9500, #f8b400);
+}
+
+/* Tabla de características */
+.features-detailed {
+    background-color: #12171f;
+    padding: 2rem 5% 5rem;
+}
+
+.table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.features-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a202c;
+}
+
+.features-table th, .features-table td {
+    padding: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #2d3748;
+}
+
+.features-table th {
+    background-color: #242c3a;
+    color: #f8b400;
+    font-size: 1.1rem;
+}
+
+.features-table tr:hover {
+    background-color: #242c3a;
+}
+
+/* Sección de compra */
+.buy-section {
+    padding: 2rem 5% 5rem;
+    text-align: center;
+}
+
+.buy-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.step {
+    background-color: #1a202c;
+    padding: 2rem;
+    border-radius: 10px;
+    border-top: 4px solid #f8b400;
+}
+
+.step span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #f8b400;
+    color: #000;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.payment-note {
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0a0d12;
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+    border-top: 1px solid #1e2530;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    .tier-card.featured {
+        transform: scale(1);
+    }
+    .tier-card.featured:hover {
+        transform: translateY(-8px);
+    }
+}
